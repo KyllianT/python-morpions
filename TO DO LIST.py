@@ -7,3 +7,4 @@ TO DO LIST
     #faire des regles au debut de la partie 
     #faire un choix des joueur (choisit de jouer contre un autre J ou un IA)
     #faire egalité quand toutes les cases sont deja prises
+    #faire le sous code (en cours)
