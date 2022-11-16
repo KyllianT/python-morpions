@@ -108,7 +108,7 @@ def alignement_diag2(grille):
 def alignement(grille):
     # assigner aligne a alignement_ligne + alignement_colonne
     # + alignement_diag1 + alignement_diag2 qui possède tous le parametre grille
-    aligne = alignement_ligne(grille)+alignement_colonne(grille)+alignement_diag1(gri
+    aligne = alignement_ligne(grille)+alignement_colonne(grille)+alignement_diag1(grille)+alignement_diag2(grille)
     #SI aligne est egale a 1 
     if aligne == 1 :
         #alors afficher message  "trois symboles alignés! le jeu est fini."
@@ -151,9 +151,9 @@ while not fin :
     correct = False
     #Tant que c'est pas egale a correct :
     while not correct :
-        # assigner a la variable rep le retour de l'éxécution de la fonction input av
+        # assigner a la variable rep le retour de l'éxécution de la fonction input avec le message "Quelle case souhaitez-vous cocher ?\n"
         rep = input("Quelle case souhaitez-vous cocher ?\n")
-        # assigner la valeur correct a la fonctionecriture_possible qui retourne gril
+        # assigner la valeur correct a la fonctionecriture_possible qui retourne grille et rep
         correct = ecriture_possible(grille,rep)
     # assigner dessin aux parametre joueur qui retourne "tour"
     dessin = joueur[tour]
