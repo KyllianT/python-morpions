@@ -126,7 +126,7 @@ def alignement(grille):
         return False
 
 
-#################################################    corps du programme    #################################################
+    #################################################    corps du programme    #################################################
 def JcJ():
 
     #construction d'une grille vide
@@ -182,33 +182,36 @@ def JcJ():
             exit()
 
 def JcIA():
+    print("eifjgyehf")
+    
+
 
 
 #################################################    Regle du morpion    ################################################# 
 
 #definir la fonction regle_morpion
-    def regle_morpion() :
-        print("Bienvenue sur ce Morpion de qualité !\n")
-        print(" \n")
-        print("Je suis Morpious votre serviteur et guide sur ce morpion. Pour commencer, ce morpion fut créé par Kyllian et William. Mes 2 géniaux créateur. Ce Morpion vous propose une version joueur contre joueur et une version contre moi ! (attention je suis imbattable à ce jeu).\n")
-        print(" \n")
-        print("Les règles sont simple : \n")
-        print("Le tableau est diviser un 9 cases. Ces 9 cases sont présentes sur des lignes et des colonnes nominées de 0 à 2. Pour 	afficher l’un de vos symboles ( X ou O) vous devrais mettre votre réponses sous cette forme: ligne – colonne (sans le tiré). \n")
-        print("Par exemple si vous souhaité mettre votre symbole au milieux vous devrait taper : 11 (1 = ligne, 1 = colonne)\n")
-        print("Si vous souhaité mettre votre symbole en haut a droite vous devrait taper : 02 (0 = ligne, 2 = colonne)\n")
-        print("/!\  Aucune triche n’est autorisé de ta part  /!\ \n")
-        print("Le premier à aligner 3 symboles gagne la partie ! \n")
-        print(" \n")
-        print(" Tu es prés ?\n")
-        mode = input(" Appuis envoie donc 1 pour jouer en Joueur contre Joueur ou 2 pour jouer contre Moi (IA)\n")
-        if mode == "1":
-            print ("Félicitation vous avez choisi de jouer entre vous j'espere qu'apres cette partie votre amitié sera toujours intacte <3 ")
-            time.sleep (2)
-            JcJ()
-        elif mode == "2":
-            print ("Félicitation vous avez choisi de jouer contre moi je vais te briser ! ")
-            time.sleep (2)
-            JcIA()
+def regle_morpion() :
+    print("Bienvenue sur ce Morpion de qualité !\n")
+    print(" \n")
+    print("Je suis Morpious votre serviteur et guide sur ce morpion. Pour commencer, ce morpion fut créé par Kyllian et William. Mes 2 géniaux créateur. Ce Morpion vous propose une version joueur contre joueur et une version contre moi ! (attention je suis imbattable à ce jeu).\n")
+    print(" \n")
+    print("Les règles sont simple : \n")
+    print("Le tableau est diviser un 9 cases. Ces 9 cases sont présentes sur des lignes et des colonnes nominées de 0 à 2. Pour 	afficher l’un de vos symboles ( X ou O) vous devrais mettre votre réponses sous cette forme: ligne – colonne (sans le tiré). \n")
+    print("Par exemple si vous souhaité mettre votre symbole au milieux vous devrait taper : 11 (1 = ligne, 1 = colonne)\n")
+    print("Si vous souhaité mettre votre symbole en haut a droite vous devrait taper : 02 (0 = ligne, 2 = colonne)\n")
+    print("/!\  Aucune triche n’est autorisé de ta part  /!\ \n")
+    print("Le premier à aligner 3 symboles gagne la partie ! \n")
+    print(" \n")
+    print(" Tu es prés ?\n")
+    mode = input(" Appuis envoie donc 1 pour jouer en Joueur contre Joueur ou 2 pour jouer contre Moi (IA)\n")
+    if mode == "1":
+        print ("Félicitation vous avez choisi de jouer entre vous j'espere qu'apres cette partie votre amitié sera toujours intacte <3 ")
+        time.sleep (2)
+        JcJ()
+    elif mode == "2":
+       print ("Félicitation vous avez choisi de jouer contre moi je vais te briser ! ")
+       time.sleep (2)
+       JcIA()
 
 
-    regle_morpion()
+regle_morpion()
